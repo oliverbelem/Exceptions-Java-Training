@@ -45,7 +45,7 @@ public class Reserva {
         if (CheckIn.before(now) || CheckOut.before(now)){
             return "Erro na reserva: As datas de Reserva devem ser datas futuras";
         }if (!CheckOut.after(CheckIn)) {
-           return "Erro na reserva: A data de CheckOut deve ser posterior a de CheckIn";
+            return "Erro na reserva: A data de CheckOut deve ser posterior a de CheckIn";
         }
 
         this.CheckIn = CheckIn;
